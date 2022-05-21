@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The BlogPost - News and Information Relaying</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- link to core style sheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#!" id="homeBtn">MY BLOG</a>
+            <button class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-5"><a class="nav-link active" href="#" id="aboutBtn">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#" id="addBtn">ADD NEW</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row" id="row1">
+            <div class="col-lg-8">
+                <!-- Posts -->
+                <div id="posts">
+                    <article>
+                        <!-- Post Header -->
+                        <h2 class="fw-bolder mb-1">The Title of the blog</h2>
+                        <!-- Post date -->
+                        <div class="text-muted fst-italic mb-2">Friday, 10 December 2021; Anonymous</div>
+                        <!-- add categories here -->
+                        <section class="mb-4">
+                            <p class="fs-5"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem at
+                                facilis
+                                tenetur. Vel aspernatur facilis distinctio veritatis maxime? Eius impedit quam
+                                architecto
+                                cupiditate quas assumenda quasi ipsum quis dolore. At numquam ipsam temporibus autem
+                                cupiditate incidunt, officia amet aperiam dolores.</p>
+                        </section>
+                    </article>
+                    <article>
+                        <h2 class="fw-bolder mb-1">Another Blog Title</h2>
+                        <div class="text-muted fst-italic mb-2">Thursday, 9 December 2021; Ashish</div>
+                        <section class="mb-4">
+                            <p class="fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+                                excepturi, sunt, ratione blanditiis dolor reiciendis explicabo aliquam molestiae
+                                accusantium harum laborum impedit tempore soluta dicta quaerat eos rerum dignissimos
+                                vero?</p>
+                        </section>
+                    </article>
+                </div>
+                <div id="searchMessage" class="fw-bolder">Your search term did not match with any posts...</div>
+
+                <!-- form for posting new blogs -->
+                <div class="post-form" id="post-form">
+                    <h2 class="fw-bolder mb-3">Compose New Post</h2>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="post-title" class="form-label fw-bold">Post Title</label>
+                            <input type="text" class="form-control" id="post-title"
+                                placeholder="Enter a title for the post...">
+                        </div>
+                        <div class="mb-3">
+                            <label for="post-body" class="form-label fw-bold">Thoughts</label>
+                            <textarea class="form-control" id="post-body" rows="8"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="authorName" class="form-label fw-bold">Author Name</label>
+                            <input type="text" class="form-control" id="authorName"
+                                placeholder="Enter public display name...">
+                        </div>
+                        <button class="btn btn-sm float-end btn-danger mb-3" id="createBtn">Create</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">Search Post</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Enter Search Term..."
+                                aria-label="Enter search term..." aria-describedby="button-search" id="filterPosts" />
+                            <button class="btn btn-sm btn-danger" id="button-search" type="button">Go!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">Ads and Promotions</div>
+                    <div class="card-body">
+                        <img src="https://dummyimage.com/400x300/c4c4c4/000000.jpg&text=Random+Image" alt=""
+                            class="img-fluid rounded mb-2">
+                        <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam officia quod
+                            animi quibusdam laborum aliquam dicta numquam vitae quaerat repellendus?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row card" id="row2">
+            <h2 class="fw-bolder mb-4 card-header bg-danger text-light">ABOUT</h2>
+            <section class="card-body">
+                <ol class="mb-2">
+                    <li class="mb-3 fs-6">This website is created with the help of the following:
+                        <ul class="mx-5">
+                            <li>VS Code</li>
+                            <li>Bootstrap Themes</li>
+                            <li>Bootstrap CSS styles</li>
+                            <li>Some core CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </li>
+                    <li class="mb-3 fs-6">It is a single page website, in which a couple of posts are hardcoded, however
+                        the
+                        website can handle adding new posts by clicking on the "ADD NEW" button found on the navbar. The
+                        navbar has other two elements in it, the first being the Brand Name, which acts as a home
+                        button, and an
+                        about button, which leads to the page with details on how the website was created.</li>
+                    <li class="mb-3 fs-6">Apart from posting blogs, the page also has a filter option, where keywords
+                        can be searched, and the
+                        matched
+                        posts are shown while the rest of the post are filtered. The filter function
+                        is set to last only 5 seconds, after which the default view is loaded.</li>
+                    <li class="mb-3 fs-6">Also there is a dedicated spot for ads and promotions.</li>
+                    <li class="mb-3 fs-6">Future plans:
+                        <ul class="mx-5">
+                            <li>Implementation of authentication of users, so that only admins can post and delete the
+                                posts.</li>
+                            <li>Connection to database.</li>
+                            <li>Implementation of tags, for easier sorting of posts.</li>
+                            <li>Uploading, storing and displaying images along with posts.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

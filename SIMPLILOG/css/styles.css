@@ -1,0 +1,17 @@
+#post-form {
+    display: none;
+  }
+  
+  #searchMessage {
+    display: none;
+    text-align: center;
+  }
+  
+  #row2 {
+    display: none;
+  }
+  
+  .card-header.bg-danger {
+    color: white;
+  }
+  
