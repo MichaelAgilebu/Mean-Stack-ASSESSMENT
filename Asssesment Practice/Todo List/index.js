@@ -93,6 +93,7 @@ const View = (() => {
         renderTodolist,
         todoListEl
     }
+
 })();
 
 
@@ -143,9 +144,12 @@ const ViewModel = ((Model, View) => {
             View.renderTodolist(state.todos)
         });
     }
+    
     return {
         bootstrap
     }
 })(Model, View);
 
+
 ViewModel.bootstrap();
+
